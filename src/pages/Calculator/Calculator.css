@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.calculator-container {
+    border: 1px solid rgb(0, 57, 163);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.25rem rgb(101, 201, 255);
+    width: 100%;
+    height: 600px;
+    background: #a4dbf4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator-header {
+    background: #254d63;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 320px; /* ขนาดสูงสุดของเครื่องคิดเลข */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+
+.calculator-display input {
+    width: 100%; 
+    padding: 10px;
+    font-size: 40px; 
+    background: #1b6483;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.calculator-header button {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: #2182af;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.2s ease;
+}
+
+.calculator-header button:active {
+    background: #777;
+}
+
+button.equal {
+    width: 128px;
+    background-color: #ff6347;
+    color: #fff;
+}
+
+button.operator {
+    background-color: #888;
+}
+
+button.operator:active {
+    background-color: #aaa;
+}
+
+/* รองรับหน้าจอขนาดเล็ก */
+@media (max-width: 480px) {
+    .calculator-header button {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .calculator-display input {
+        font-size: 30px;
+    }
+}

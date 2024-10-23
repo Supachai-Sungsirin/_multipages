@@ -1,0 +1,41 @@
+#container {
+    margin: 10px auto;
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 10px;
+  }
+  
+  #field {
+    border: 1px solid red;
+    height: 500px;
+    width: 700px;
+    margin: 10px;
+    background-image: url(/_multipages/floor.avif);
+    background-position: center;
+  }
+  
+  #control {
+    /* border: 1px solid blue; */
+    margin: 10px;
+  }
+  
+  #ball {
+      /* fixed */
+      border: 1px solid green;
+      background-color: rgb(159, 195, 227);
+      border-radius: 50%;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      /*  variables */
+      height: 100px;
+      width: 100px;
+      /* left: calc((width - diameter - border); */
+      /* top: calc((width - diameter - border); */
+  }
+  
+  button {
+    margin-right: 10px;
+  }
+  

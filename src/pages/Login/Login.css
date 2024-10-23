@@ -1,0 +1,36 @@
+.login-container {
+    border: 1px solid ;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    width: 250px;
+    margin: 2rem auto;
+}
+
+.login-logo {
+    display: flex;
+    height: 100px; 
+    justify-content: center;
+}
+.login-logo:hover {
+    filter: drop-shadow(0 0 1em #008cff);
+}
+.login-logo.react:hover {
+    filter: drop-shadow(0 0 1em #74e1ff);
+}
+
+.login-form {
+    display: block;
+    text-align: left;
+    margin: 0.5rem;
+
+}
+
+/* 
+display: "flex",
+alignItems: "center",
+justifyContent: "center",
+width: "fit-content", */
+
+
+/* display: "block", textAlign: "left", width: "fit-content"  */
